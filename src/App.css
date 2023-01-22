@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.outer-container {
+  width: 100vw;
+  max-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+.bg-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/match-game-bg.png');
+  background-size: cover;
+  color: #ffffff;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+}
+.container {
+  width: 650px;
+}
+@media screen and (max-width: 767px) {
+  .container {
+    width: 350px;
+  }
+}
+.match-thumbnails {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.tabs-list {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 12px;
+  list-style-type: none;
+  padding-left: 0px;
+}
+.thumbnails-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+  padding-left: 0px;
+  margin: 0px;
+}
+.button {
+  color: #ffffff;
+  background-color: transparent;
+  border-style: none;
+  cursor: pointer;
+}
+.selected {
+  color: #fec653;
+  padding-bottom: 8px;
+  border-bottom: 3px solid #fec653;
+}
+.credit-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/match-game-score-card-lg-bg.png');
+  background-size: cover;
+  color: #ffffff;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 280px;
+  padding-bottom: 100px;
+}
+@media screen and (max-width: 767px) {
+  .credit-container {
+    padding-top: 100px;
+    padding-bottom: 40px;
+  }
+}
+.play-again-button {
+  background-color: #cf60c8;
+  border-style: none;
+  border-radius: 8px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 8px;
+  cursor: pointer;
+}
+.trophy {
+  width: 60%;
+}
+@media screen and (max-width: 767px) {
+  .trophy {
+    width: 50%;
+  }
+}

@@ -1,0 +1,20 @@
+.thumbnail {
+  list-style: none;
+  width: 130px;
+}
+@media screen and (max-width: 767px) {
+  .thumbnail {
+    width: 87px;
+  }
+}
+
+.thumbnail-button {
+  background-color: transparent;
+  border-style: none;
+  width: 100%;
+  cursor: pointer;
+}
+
+.thumb-image {
+  width: 100%;
+}
